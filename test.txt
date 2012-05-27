@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Test SQL Parser </title>
+</head>
+<body>
+
+$var1 = "sleet * from;";
+$var2 = "select * fom;";
+$var3 = "select * from;";
+$var4 = "select * from t1;";
+
+$var1 = "create table tb;";
+$var2 = "create tab tb;";
+$var3 = "create table;";
+
+$var1 = "update ta tb;";
+$var2 = "update tset a=5 where a=10;";
+$var3 = "update taset a=5,b=10 where a=10;";
+$var3 = "update ta set a=5 where;";
+
+$var1 = "delete * from tab;";
+$var2 = "delee a from tab;";
+$var3 = "delete from tab;";
+$var4 = "delete a from tabl;";
+
+</body>
+</html>
